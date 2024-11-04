@@ -221,7 +221,6 @@
   
 
 
-    <!-- Courses Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -229,13 +228,14 @@
                 <h1 class="mb-5">Popular Courses</h1>
             </div>
             <div class="row g-4 justify-content-center">
+                <!-- Full Stack Development Course -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/webc.png" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showCard()">Join Now</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showCourseForm('Full Stack Development Course', 'Mr. Kushagra Bhatia')">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -248,22 +248,18 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4" name="courses-name">full Stack Development Course </h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" name="Expert-name"></i>Mr. Kushagra Bhatia</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>28 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30 Students</small>
+                            <h5 class="mb-4">Full Stack Development Course</h5>
                         </div>
                     </div>
                 </div>
+                <!-- Unity Game Development Course -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/game-dev.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;"  onclick="showCard()">Join Now</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showCourseForm('Unity Game Development full Course', 'A2D nandha')">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -276,22 +272,18 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4" name="courses-name ">Unity Game Development full Course </h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" name="Expert-name"></i>A2D nandha</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>43Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>44 Students</small>
+                            <h5 class="mb-4">Unity Game Development full Course</h5>
                         </div>
                     </div>
                 </div>
+                <!-- VFX Course -->
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid" src="img/vfx.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showCard()">Join Now</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;" onclick="showCourseForm('Vfx & Graphic Development Course(free student Id)', 'BSP Studios')">Join Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -304,13 +296,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4" name="courses-name ">Vfx & Graphic Development Course(free student Id) </h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2" name="Expert-name"></i>
-                                BSP Studios</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>25 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>12 Students</small>
+                            <h5 class="mb-4">Vfx & Graphic Development Course(free student Id)</h5>
                         </div>
                     </div>
                 </div>
@@ -345,6 +331,7 @@
 
 
 <style>
+
     .card-container {
     position: fixed;
     top: 50%;
@@ -495,48 +482,154 @@
     }
 </script>
 
-
-
-<form id="course-join-form" method="POST" data-netlify="true" name="course-join-form" style="display:none;">
-    <input type="text" name="name" id="user-name" placeholder="Enter your name" required>
-    <input type="email" name="email" id="user-email" placeholder="Enter your email" required>
-    <input type="tel" name="phone" id="user-phone" placeholder="Enter your phone" required>
-    <input type="text" name="course-name" id="course-name">
-    <input type="text" name="expert-name" id="expert-name">
-    <button type="submit">Submit</button>
-</form>
-
+<!-- Modal for Course Enrollment -->
+<div class="modal" style="display:none;">
+    <form id="course-join-form" class="form" method="POST" data-netlify="true" name="course-join-form">
+        <div class="separator">
+            <hr class="line">
+            <p>Join the Course</p>
+            <hr class="line">
+        </div>
+        <div class="credit-card-info--form">
+            <div class="input_container">
+                <label for="user-name" class="input_label">Full Name</label>
+                <input id="user-name" class="input_field" type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input_container">
+                <label for="user-email" class="input_label">Email</label>
+                <input id="user-email" class="input_field" type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input_container">
+                <label for="user-phone" class="input_label">Phone</label>
+                <input id="user-phone" class="input_field" type="tel" name="phone" placeholder="Enter your phone" required>
+            </div>
+            <div class="input_container">
+                <label for="course-name" class="input_label">Course Name</label>
+                <input id="course-name" class="input_field" type="text" name="course-name" placeholder="Course name" readonly>
+            </div>
+            <div class="input_container">
+                <label for="expert-name" class="input_label">Expert Name</label>
+                <input id="expert-name" class="input_field" type="text" name="expert-name" placeholder="Expert name" readonly>
+            </div>
+        </div>
+        <button class="purchase--btn" type="submit">Confirm Enrollment</button>
+    </form>
+</div>
 
 <script>
-    // Show and fill the form with the course and instructor details when "Confirm" is clicked
-    function submitCourseForm(courseName, expertName) {
+    // Function to display the form with the selected course and expert names
+    function showCourseForm(courseName, expertName) {
         document.getElementById("course-name").value = courseName;
         document.getElementById("expert-name").value = expertName;
-
-        // Show the form for testing or submit it directly
-        document.getElementById("course-join-form").style.display = "block";
-        document.getElementById("course-join-form").submit();
+        document.querySelector(".modal").style.display = "block";
     }
-
-    // Get user details and course details on "Confirm" button click
-    document.querySelector(".conform").addEventListener("click", function () {
-        const userName = prompt("Enter your name:");
-        const userEmail = prompt("Enter your email:");
-        const userPhone = prompt("Enter your phone:");
-        
-        // Set the values
-        document.getElementById("user-name").value = userName;
-        document.getElementById("user-email").value = userEmail;
-        document.getElementById("user-phone").value = userPhone;
-
-        // Assuming course and expert data are available in HTML
-        const courseName = document.querySelector("[name='courses-name']").textContent;
-        const expertName = document.querySelector("[name='Expert-name']").textContent;
-
-        // Call form submission
-        submitCourseForm(courseName, expertName);
-    });
 </script>
+ 
+
+
+
+<style>
+ 
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 26px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal .form {
+    max-width: 450px;
+    margin: auto;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.separator {
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 10px;
+    color: #8B8E98;
+    margin: 0 10px;
+}
+
+.separator > p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.separator .line {
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+}
+
+.credit-card-info--form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input_label {
+    font-size: 10px;
+    color: #8B8E98;
+    font-weight: 600;
+}
+
+.input_field {
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+}
+
+.purchase--btn {
+    height: 55px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #363636 0%, #1B1B1B 50%, #000000 100%);
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.purchase--btn:hover {
+    box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
+}
+
+</style>
 
 
 
