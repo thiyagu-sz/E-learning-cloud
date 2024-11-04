@@ -470,21 +470,11 @@
 
 </style>
 
-<script>
-    // Show the card
-    function showCard() {
-        document.getElementById("orderCard").style.display = "flex";
-    }
 
-    // Hide the card
-    function hideCard() {
-        document.getElementById("orderCard").style.display = "none";
-    }
-</script>
 
 <!-- Modal for Course Enrollment -->
 <div class="modal" style="display:none;">
-    <form id="course-join-form" class="form" method="POST" data-netlify="true" name="course-join-form">
+    <form id="course-join-form" class="form" method="POST" data-netlify="true" name="course-join-form" onsubmit="handleSubmit(event)"">
         <div class="separator">
             <hr class="line">
             <p>Join the Course</p>
@@ -512,7 +502,7 @@
                 <input id="expert-name" class="input_field" type="text" name="expert-name" placeholder="Expert name" readonly>
             </div>
         </div>
-        <button class="purchase--btn" type="submit" onclick="showCard()">Confirm Enrollment</button>
+        <button class="purchase--btn" type="submit" >Confirm Enrollment</button>
     </form>
 </div>
 
@@ -522,6 +512,14 @@
         document.getElementById("course-name").value = courseName;
         document.getElementById("expert-name").value = expertName;
         document.querySelector(".modal").style.display = "block";
+
+        function showCard() {
+        document.getElementById("orderCard").style.display = "flex";
+    }
+
+    function hideCard() {
+        document.getElementById("orderCard").style.display = "none";
+    }
     }
 </script>
  
