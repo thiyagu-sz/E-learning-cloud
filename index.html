@@ -497,6 +497,47 @@
 
 
 
+<form id="course-join-form" method="POST" data-netlify="true" name="course-join-form" style="display:none;">
+    <input type="text" name="name" id="user-name" placeholder="Enter your name" required>
+    <input type="email" name="email" id="user-email" placeholder="Enter your email" required>
+    <input type="tel" name="phone" id="user-phone" placeholder="Enter your phone" required>
+    <input type="text" name="course-name" id="course-name">
+    <input type="text" name="expert-name" id="expert-name">
+    <button type="submit">Submit</button>
+</form>
+
+
+<script>
+    // Show and fill the form with the course and instructor details when "Confirm" is clicked
+    function submitCourseForm(courseName, expertName) {
+        document.getElementById("course-name").value = courseName;
+        document.getElementById("expert-name").value = expertName;
+
+        // Show the form for testing or submit it directly
+        document.getElementById("course-join-form").style.display = "block";
+        document.getElementById("course-join-form").submit();
+    }
+
+    // Get user details and course details on "Confirm" button click
+    document.querySelector(".conform").addEventListener("click", function () {
+        const userName = prompt("Enter your name:");
+        const userEmail = prompt("Enter your email:");
+        const userPhone = prompt("Enter your phone:");
+        
+        // Set the values
+        document.getElementById("user-name").value = userName;
+        document.getElementById("user-email").value = userEmail;
+        document.getElementById("user-phone").value = userPhone;
+
+        // Assuming course and expert data are available in HTML
+        const courseName = document.querySelector("[name='courses-name']").textContent;
+        const expertName = document.querySelector("[name='Expert-name']").textContent;
+
+        // Call form submission
+        submitCourseForm(courseName, expertName);
+    });
+</script>
+
 
 
   <!-- Category Start -->
